@@ -39,125 +39,127 @@
 
 
 <body>
-
-    <nav class="nav-bar">
-        <input id="nav-toggle" type="checkbox">
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/SVG/Quesawhite.svg" width="100" height="100" alt="">
-            </a>
-        </div>
-        <ul class="links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#Teachers">Teachers</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li>
-                <a class="btn btn-outline-light p-3" href="#" tabindex="-1" aria-disabled="true">Ask Question</a>
-            </li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
+    <div class="main-container">
+        <nav class="nav-bar">
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/SVG/Quesawhite.svg" width="100" height="100" alt="">
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Teachers">Teachers</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li>
+                    <a class="btn btn-outline-light p-3" href="ask-question.html" tabindex="-1" aria-disabled="true">Ask Question</a>
+                </li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </label>
-    </nav>
+        </nav>
 
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <img id="login-vector-image" src="assets/images/SVG/Sitting-0.svg" alt="">
-            </div>
-            <div class="col-lg-4 ">
-                <div class="">
-                    <h1 class="text-center display-4 "> Welcome Back </h1>
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-3 col-lg-5 ">
+                    <img id="login-vector-image" src="assets/images/SVG/Sitting-0.svg" alt="">
+                </div>
+                <div class=" col-sm-6 col-md-6 col-lg-6 ">
+                    <div class="">
+                        <h1 class="text-center display-4 pt-4 pb-4 " style="color: purple;"> Welcome Back!</h1>
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form2Example3" class="form-control form-control-lg" />
+                                <label class="form-label" for="form2Example1">Email address</label>
+                            </div>
 
-                    <form>
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                            <input type="email" id="form2Example1" class="form-control" />
-                            <label class="form-label" for="form2Example1">Email address</label>
-                        </div>
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form2Example2" class="form-control form-control-lg" />
+                                <label class="form-label" for="form2Example2">Password</label>
+                            </div>
 
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="form2Example2" class="form-control" />
-                            <label class="form-label" for="form2Example2">Password</label>
-                        </div>
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked />
+                                        <label class="form-check-label" for="form2Example3"> Remember me </label>
+                                    </div>
+                                </div>
 
-                        <!-- 2 column grid layout for inline styling -->
-                        <div class="row mb-4">
-                            <div class="col d-flex justify-content-center">
-                                <!-- Checkbox -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked />
-                                    <label class="form-check-label" for="form2Example3"> Remember me </label>
+                                <div class="col">
+                                    <!-- Simple link -->
+                                    <a href="#!">Forgot password?</a>
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <!-- Simple link -->
-                                <a href="#!">Forgot password?</a>
-                            </div>
-                        </div>
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-lg btn-block mb-4  ">Sign in</button>
 
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-lg btn-block mb-4">Sign in</button>
-
-                        <!-- Register buttons -->
-                        <div class="text-center">
-                            <p>Not a member? <a href="signin.html">Register</a></p>
-                            <p>or sign up with:</p>
-                            <button type="button" class="btn btn-primary btn-lg btn-floating mx-3">
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                                <p>Not a member? <a href="signin.html">Register</a></p>
+                                <p>or sign up with:</p>
+                                <button type="button" class="btn btn-primary btn-lg btn-floating mx-3">
                             <i class="fab fa-facebook-f fa-2x"></i>
                           </button>
 
-                            <button type="button" class="btn btn-danger btn-lg btn-floating mx-3">
+                                <button type="button" class="btn btn-danger btn-lg btn-floating mx-3">
                             <i class="fab fa-google fa-2x"></i>
                           </button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class=" mt-5 pt-5 pb-5 footer">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-5 col-xs-12 about-company ">
+                            <img src="assets/images/SVG/Quesawhite.svg" width="100" height="100" alt="">
+                            <p class="pr-5 text-white-50 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+                            <p><a href="# "><i class="fa fa-facebook-square mr-1 "></i></a><a href="# "><i class="fa fa-linkedin-square "></i></a></p>
                         </div>
-                    </form>
+                        <div class="col-lg-3 col-xs-12 links ">
+                            <ul class="m-0 p-0 ">
+                                <li><a href="# ">Home</a></li>
+                                <li><a href="# ">About</a></li>
+                                <li> <a href="# ">Teachers</a></li>
+                                <li><a href="# ">Ask Question</a></li>
+                                <li>
+                                    <a href="# "></a>
+                                </li>
+                                <li>
+                                    <a href="# "></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row mt-5 ">
+                        <div class="col copyright ">
+                            <p class=" "><small class="text-white-50 ">© 2021. All Rights Reserved.</small></p>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
-        </div>
+        </footer>
     </div>
-
-
-
-<!--     <div class=" mt-5 pt-5 pb-5 footer">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-5 col-xs-12 about-company ">
-                    <img src="assets/images/SVG/Quesawhite.svg" width="100" height="100" alt="">
-                    <p class="pr-5 text-white-50 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-                    <p><a href="# "><i class="fa fa-facebook-square mr-1 "></i></a><a href="# "><i class="fa fa-linkedin-square "></i></a></p>
-                </div>
-                <div class="col-lg-3 col-xs-12 links ">
-                    <ul class="m-0 p-0 ">
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="# ">About</a></li>
-                        <li> <a href="# ">Teachers</a></li>
-                        <li><a href="# ">Ask Question</a></li>
-                        <li>
-                            <a href="# "></a>
-                        </li>
-                        <li>
-                            <a href="# "></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="row mt-5 ">
-                <div class="col copyright ">
-                    <p class=" "><small class="text-white-50 ">© 2021. All Rights Reserved.</small></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
