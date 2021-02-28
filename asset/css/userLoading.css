@@ -1,0 +1,101 @@
+.top-section {
+  background-color: rgb(197, 184, 184) !important;
+  width: 100%;
+}
+
+#formInput {
+  width: 90%;
+}
+
+#formSearchBtn {
+  width: 150px;
+  margin-right: 10px;
+  float: right;
+}
+
+.userLoading-sideMenu {
+  width: 15%;
+  background-color: black;
+  color: white;
+  height: 100%;
+  position: fixed;
+  text-align: start;
+  font-size: medium;
+  padding: 10px 10px 40px 0px;
+  margin-bottom: 200px;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+  text-align: justify;
+}
+
+.main {
+  padding-left: 15%;
+  padding-top: 5%;
+  margin-left: 20px;
+}
+
+#logo {
+  direction: rtl;
+  margin-right: 10px;
+}
+
+.top-users{
+  border: 1px solid gray;
+  float: right !important;
+  text-align: center;
+  padding: 10px;
+}
+
+.pickSubject {
+  border: 1px solid gray;
+  border-radius: 40px 1px;
+  padding: 20px;
+}
+
+
+select {
+  width:150px;
+  border:1px solid gray;
+  border-radius: 15px;
+  padding:2px;
+}
+
+.write-up-head{
+  margin: 15px 0px 15px 0px;
+}
+
+.button{
+  color: white;
+  border-radius: 20px;
+  margin: 7px;
+  height: 20.64px;
+  width: 61.4px; 
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  }
+
+  .reply{
+    background-color: #7B55C8;
+    width: 728.73px;
+    height: 167.77px;
+    border-radius: 10px;
+    margin: 22.04px 10px 41.23px;
+  }
+
+  textarea{
+    background-color: #7B55C8;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-style: none;
+    border-color: transparent;
+    outline: none !important;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: white;
+    width: 90%;
+  }
