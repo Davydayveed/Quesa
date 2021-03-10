@@ -1,0 +1,567 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    // position: fixed; 
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 5%;
+    height: 100px;
+    background: linear-gradient(to right, rgb(106, 48, 147), rgb(160, 68, 255));
+}
+
+nav .logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .links li {
+    list-style: none;
+}
+
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    nav .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, .8);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+    nav .links a {
+        font-size: 20px;
+    }
+    nav :checked~.links {
+        bottom: 0;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+.brand-carousel {
+    background: #eee;
+    margin-top: 10%;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+    max-height: 60px;
+    margin: 0 auto;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #222222 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #FF170F !important;
+}
+
+
+/* ignore the code below */
+
+.link-area {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 15px;
+    border-radius: 40px;
+    background: tomato;
+}
+
+.link-area a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.top-section {
+    background: linear-gradient(to right, rgb(106, 48, 147), rgb(160, 68, 255));
+}
+
+.about_us {
+    background: linear-gradient(310.6deg, rgba(100, 0, 233, 0.94) 6.8%, rgba(166, 0, 188, 0.66) 57.8%);
+}
+
+.avatar0 {
+    position: relative;
+    top: 4rem;
+    z-index: 1;
+}
+
+#avatar1 {
+    position: relative;
+    top: 7.5rem;
+}
+
+#vector0 {
+    position: relative;
+    left: 8rem;
+    // bottom: 3rem;
+}
+
+#vector1 {
+    position: relative;
+    left: 9rem;
+    bottom: 3rem;
+}
+
+#question_mark {
+    position: relative;
+    top: 6rem;
+    left: 9rem;
+}
+
+// How It works section
+//Start Ask Question
+#askquestion {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: calc(55% - 92px/2 - 390px);
+    top: 400px;
+}
+
+#one {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    left: calc(56% - 33px/2 - 538.5px);
+    top: 510px;
+    font-family: Gilroy-Bold;
+    font-size: 62px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+    color: rgba(1, 17, 100, 0.07);
+}
+
+#text0 {
+    position: absolute;
+    top: 500px;
+    left: calc(59% - 33px/2 - 538.5px);
+    color: #2F3A5B;
+}
+
+#instruction0 {
+    position: absolute;
+    width: 290px;
+    height: 74px;
+    left: calc(59% - 33px/2 - 538.5px);
+    top: 530px;
+    // font-family: Gilroy-Regular;
+    // font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2F3A5B;
+}
+
+// End Ask question
+#getyouranswers {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: calc(50% - 96px/2 - 14px);
+    top: 140px;
+}
+
+#two {
+    /* 2 */
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    left: calc(50% - 33px/2 - 156.5px);
+    top: 250px;
+    font-family: Gilroy-Bold;
+    font-size: 62px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+}
+
+#text1 {
+    /* Get your questions answered */
+    position: absolute;
+    width: 273px;
+    height: 74px;
+    left: calc(50% - 273px/2 + 10.5px);
+    top: 240px;
+    // font-family: Gilroy-Bold;
+    // font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #2F3A5B;
+}
+
+#instruction1 {
+    position: absolute;
+    width: 290px;
+    height: 56px;
+    left: calc(50% - 290px/2 + 19px);
+    top: 310px;
+    // font-family: Gilroy-Regular;
+    // font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2F3A5B;
+}
+
+#three {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    top: 460px;
+    left: calc(44% - 33px/2 + 260.5px);
+    font-family: Gilroy-Bold;
+    font-size: 62px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+    color: rgba(1, 17, 100, 0.07);
+}
+
+#text2 {
+    position: absolute;
+    width: 273px;
+    height: 74px;
+    left: calc(44% - 273px/2 + 420.5px);
+    top: 450px;
+    // font-family: Gilroy-Bold;
+    // font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #2F3A5B;
+}
+
+#instructiom2 {
+    position: absolute;
+    width: 290px;
+    height: 56px;
+    left: calc(46% - 33px/2 + 260.5px);
+    top: 530px;
+    // font-family: Gilroy-Regular;
+    // font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2F3A5B;
+}
+
+#femaleatttendant {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: calc(37% - 96px/2 + 437px);
+    top: 350px;
+}
+
+#maleatttendant {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: calc(43% - 96px/2 + 437px);
+    top: 350px;
+}
+
+.howitworks {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.instruction {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-image {
+    background: linear-gradient(310.6deg, rgba(100, 0, 233, 0.94) 6.8%, rgba(96, 2, 109, 0.66) 57.8%);
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, rgb(22, 34, 42), rgb(58, 96, 115));
+    color: white;
+    .links {
+        ul {
+            list-style-type: none;
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+            transition: color .2s;
+            &:hover {
+                text-decoration: none;
+                color: #8841cb;
+            }
+        }
+    }
+    .about-company {
+        i {
+            font-size: 25px;
+        }
+        a {
+            color: white;
+            transition: color .2s;
+            &:hover {
+                color: #4180CB
+            }
+        }
+    }
+    .location {
+        i {
+            font-size: 18px;
+        }
+    }
+    .copyright p {
+        border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .avatar0 {
+        right: 2rem;
+        width: 3rem;
+    }
+    #avatar0 {
+        width: 13rem;
+        margin-left: 2rems;
+    }
+    #avatar1 {
+        display: none;
+    }
+    #vector0 {
+        display: none;
+    }
+    #vector1 {
+        display: none;
+    }
+    #text-bubble {
+        width: 2rem;
+        height: 2rem;
+        display: none;
+    }
+    #avarter {
+        width: 13rem;
+    }
+    #login-vector-image {
+        display: none;
+    }
+    #signin-vector-image {
+        display: none;
+    }
+    #ask-question {
+        display: none;
+    }
+    .subject {
+        width: 20px;
+        height: auto;
+        display: none;
+    }
+    .subject_arrow {
+        width: 30px;
+    }
+    .subject_tumbnail {
+        width: 40px;
+    }
+}
+
+.main-container {
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 380px;
+    /* height of your footer */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #login-vector-image {
+        width: 450px;
+    }
+    #signin-vector-image {
+        width: 100px;
+        height: 200px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #login-vector-image {
+        width: 450px;
+        height: 400px;
+    }
+    #signin-vector-image {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+// Large devices (desktops, 1100px and up)
+@media (min-width: 992px) {
+    .howitworks-sm {
+        display: none;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+// Max-width
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    #login-vector-image {
+        display: none;
+    }
+    #signin-vector-image {
+        display: none;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .howitworks-lg {
+        display: none;
+    }
+    #avatar1 {
+        display: none;
+    }
+    .howitworks-sm {
+        margin-top: 40rem;
+    }
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        // top: 209rem;
+    }
+    #ask-question {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
+// No media query since the xxl breakpoint has no upper bound on its width
