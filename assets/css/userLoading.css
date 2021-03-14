@@ -15,14 +15,13 @@
 
 .userLoading-sideMenu {
   width: 15%;
-  background-color: black;
+  background-color: rgb(36, 34, 34);
   color: white;
   height: 100%;
   position: fixed;
   text-align: start;
   font-size: medium;
   padding: 10px 10px 40px 0px;
-  margin-bottom: 200px;
 }
 
 li {
@@ -34,7 +33,7 @@ li {
 .main {
   padding-left: 15%;
   padding-top: 5%;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 #logo {
@@ -47,6 +46,8 @@ li {
   float: right !important;
   text-align: center;
   padding: 10px;
+  width: 250px;
+ 
 }
 
 .pickSubject {

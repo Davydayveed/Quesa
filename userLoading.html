@@ -4,31 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/assets/css/userLoading.css" rel="stylesheet" type="text/css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link href="/assets/css/userLoading.css" rel="stylesheet" type="text/css" />
 
     
     <title>User Loading</title>
   </head>
 
+  <style>
+
+    .navbar {
+  background-color: #7B55C8;
+}
+
+.userLoading-sideMenu{
+  float: left;
+}
+
+  </style>
+
 
   <body>
     <div class="top-section">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+      <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar ">
         <div class="row"></div>
         <div class="col-md-2" id="logo">
+        <a href="./index.html">
           <img
           src="assets/images/SVG/Quesablack.svg"
-          width="100"
-          height="100"
+          width="125px"
+          height="50px"
           alt=""
-          style="margin-left: 50px;"
         />
+        </a>
         </div>
 
         <div class="col-md-7">
@@ -44,7 +58,7 @@
                 />
                 <button
                   id="formSearchBtn"
-                  class="btn btn-outline-success btn-sm"
+                  class="btn btn-primary btn-sm"
                   type="submit"
                 >
                   Ask Question
@@ -56,9 +70,9 @@
 
         <div class="col-md-2">
           <img
-          src="assets/images/SVG/getyouranswers.svg"
-          width="100"
-          height="100"
+          src="assets/images/SVG/notification.svg"
+          width="50px"
+          height="50px"
           alt=""
           style="margin-left: 50px;"
         />
@@ -67,7 +81,7 @@
         <div class="col-md-1">
           <img
             style="border-radius: 50%"
-            src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"
+            src="assets/images/SVG/img.svg"
             alt="img"
             height="50px"
             width="50px"
@@ -76,33 +90,139 @@
       </div>
       </nav>
     </div>
+    <br/ > <br /> <br /> 
 
     <div class="userLoading-sideMenu">
      <ul>
        <li style="text-decoration: underline; 
-       font-size: large; font-weight: 700;
+       font-size:larger; font-weight: 1000;
         color: white;"> Subjects </li>
 
-     <li> All Subjects </li>
-     <li> Mathematics </li>
-     <li> English Language </li>
-     <li> Geography </li>
-     <li> Economics </li>
-     <li> History </li>
-     <li> Computer Science </li>
-     <li> Physics </li>
-     <li> Art </li>
-     <li> Music </li>
-     <li> Business </li>
-     <li> Science </li>
-     <li> Biology </li>
+     <li> <img
+      src="assets/images/math 1.png"
+      width="20"
+      height="20"
+      alt=""
+    />
+     Mathematics 
+    </li>
+     <li>
+      <img
+      src="assets/images/english 1.png"
+      width="20"
+      height="20"
+      alt=""
+    /> 
+      English Lang.
+     </li>
+     <li>
+      <img
+      src="assets/images/geography.png"
+      width="20"
+      height="20"
+      alt=""
+    /> 
+      Geography 
+    </li>
+    <li>
+      <img
+      src="assets/images/SVG/chemistry.svg"
+      width="20"
+      height="20"
+      alt=""
+    /> 
+      Chemistry
+     </li>
+
+     <li>
+      <img
+      src="assets/images/SVG/economics.svg"
+      width="20"
+      height="20"
+      alt=""
+    /> 
+      Economics
+     </li>
+     <li>
+      <img
+      src="assets/images/SVG/history.svg"
+      width="20"
+      height="20"
+      alt=""
+    />  
+      History
+     </li>
+     <li>
+      <img
+      src="assets/images/SVG/computer.svg"
+      width="20"
+      height="20"
+      alt=""
+    />  
+      Comp. Science
+     </li>
+     <li>
+      <img
+      src="assets/images/Physics.png"
+      width="20"
+      height="20"
+      alt=""
+    />  
+      Physics 
+    </li>
+     <li>
+      <img
+      src="assets/images/SVG/art.svg"
+      width="20"
+      height="20"
+      alt=""
+    />  
+      Art 
+    </li>
+     <li>
+      <img
+      src="assets/images/SVG/music.svg"
+      width="20"
+      height="20"
+      alt=""
+    />  
+      Music
+     </li>
+     <li>
+      <img
+      src="assets/images/SVG/bus.studies.svg"
+      width="20"
+      height="20"
+      alt=""
+    />   
+      Bus. Studies
+    </li>
+     <li>
+      <img
+      src="assets/images/SVG/chemistry.svg"
+      width="20"
+      height="20"
+      alt=""
+    />    
+      Biology
+     </li>
+
+     <li>
+      <img
+      src="assets/images/SVG/science.svg"
+      width="20"
+      height="20"
+      alt=""
+    />    
+      Others
+     </li>
      
      </ul>
     </div>
 
     <div class="main">
       <div class="row">
-        <div class="col-md-6 col-lg-6 col-sm-6">
+        <div class="col-md-8 col-lg-8 col-sm-8" style="width: 700px;">
            <div class="pickSubject">
               <h2 style="font-weight: bold; margin-bottom: 46px;">What do you want to know?</h2>
                <div class="row">
@@ -115,8 +235,9 @@
                     </select>
                   </div>
 
-                  <div class="col-md-6 col-sm-6 col-lg-6">
-                   <button style="border-radius: 20px; font-size: medium; float: right !important; border: none;
+                  <div class="col-md-4 col-sm-4 col-lg-4">
+                   <button style="border-radius: 20px; font-size: medium; text-align: center;
+                   float: right !important; border: none;
                    background-color: rgb(36, 21, 243); color: white; margin-right: 25px !important;">
                      Ask your question
                    </button>
@@ -129,51 +250,94 @@
 
            <div class="col-md-4 col-lg-4 col-sm-4">
             <div class="top-users">
-              <h2 style="margin-bottom: 30px; text-align: center;">Top Users</h2>
-              <ul>
-                <li>  <img
+              <div class="row">
+                  <div class="col-md-3 col-sm-3 col-lg-3">
+                    <img 
+                    src="./assets//images/SVG/crown.svg"
+                     alt=""
+                     height="38px"
+                     width="38px"
+                     style="float: left;"
+                     />
+                  </div>
+
+                  <div class="col-md-9 col-sm-9 col-lg-9">
+                    <h4 
+                    style="margin-bottom: 30px; 
+                    float: right; font-family: Verdana, Geneva, Tahoma, sans-serif;"
+                    >Top Users</h4>
+
+                  </div>
+              </div>
+
+              <div class="row" style="padding-right: 10px;">
+                  <div class="col-md-2 col-lg-2 col-sm-2"> 
+                    <img
+                    style="border-radius: 50%"
+                    src="./assets//images/SVG/img.svg"
+                    alt="img"
+                    height="20px"
+                    width="20px"
+                  />
+                  </div>
+                  <div class="col-md-7 col-lg-7 col-sm-7"> 
+                    <h6> Nimide jay </h6>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-sm-3"> 
+                    <small>2234pts</small>
+                  </div>
+              </div>
+              <div class="row" style="padding-right: 10px;">
+                <div class="col-md-2 col-lg-2 col-sm-2"> 
+                  <img
                   style="border-radius: 50%"
-                  src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"
+                  src="./assets//images/SVG/img.svg"
                   alt="img"
                   height="20px"
                   width="20px"
-                />Nimide jay <small>2234pts</small></li>
-                <li>  <img
-                  style="border-radius: 50%"
-                  src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"
-                  alt="img"
-                  height="20px"
-                  width="20px"
-                />Nimide jay <small>2234pts</small></li>
-                <li>  <img
-                  style="border-radius: 50%"
-                  src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"
-                  alt="img"
-                  height="20px"
-                  width="20px"
-                />Nimide jay <small>2234pts</small></li>
-                <li>  <img
-                  style="border-radius: 50%"
-                  src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"
-                  alt="img"
-                  height="20px"
-                  width="20px"
-                />Nimide jay <small>2234pts</small></li>
-              </ul>
+                />
+                </div>
+                <div class="col-md-7 col-lg-7 col-sm-7"> 
+                  <h6> Nimide jay </h6>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3"> 
+                  <small>2234pts</small>
+                </div>
+            </div>
+            <div class="row" style="padding-right: 10px;">
+              <div class="col-md-2 col-lg-2 col-sm-2"> 
+                <img
+                style="border-radius: 50%"
+                src="./assets//images/SVG/img.svg"
+                alt="img"
+                height="20px"
+                width="20px"
+              />
+              </div>
+              <div class="col-md-7 col-lg-7 col-sm-7"> 
+                <h6> Nimide jay </h6>
+              </div>
+              <div class="col-md-3 col-lg-3 col-sm-3"> 
+                <small>2234pts</small>
+              </div>
+          </div>
+
             </div>
 
-          </div>    
+          </div>   
        
         </div>
+        <br/> 
 
-       <div style="border: 1px solid gray; width: 58%; height: min-100vh;">
+       <div style="border: 1px solid gray; width: 58%;
+        height: min-100vh; width: 700px;">
          <div class="write-up-head">
           <div style="float: left; display: flex; flex-direction: row; margin-left: 15px;">
             <img alt="img"
           height="40px"
           width="40px"
           style="border-radius: 50%;"
-          src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"
+          src="./assets/images/SVG/img.svg"
           />
 
           <h6 style="margin-left: 20px; margin-top: 0px;">Chris Nunez <br/> <b>Math</b></h3>
@@ -239,14 +403,15 @@
 
        </div>
 
-       <div style="border: 1px solid gray; width: 58%; height: min-100vh;">
+       <div style="border: 1px solid gray; 
+        width: 700px; height: min-100vh;">
         <div class="write-up-head">
          <div style="float: left; display: flex; flex-direction: row; margin-left: 15px;">
            <img alt="img"
          height="40px"
          width="40px"
          style="border-radius: 50%;"
-         src="https://i.guim.co.uk/img/media/27fe8418a3ee15e91b0d170e7a104eb6f04255d6/0_153_2560_1536/master/2560.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=6ac60c5f9a4856ecbb2128f3122c092f"
+         src="./assets/images/SVG/img.svg"
          />
 
          <h6 style="margin-left: 20px; margin-top: 0px;">Chris Nunez <br/> <b>Math</b>

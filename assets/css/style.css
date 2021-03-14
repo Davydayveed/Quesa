@@ -579,4 +579,9 @@ footer {
     height: 500px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.user-loading{
+  position: sticky;
+
+}
+
